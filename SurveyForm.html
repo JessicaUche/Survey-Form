@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <h1 id="title">Employee Satisfaction Survey Form</h1>
+<p id="description">This form is to enable us curate real-time feedback on employee perception of the company culture.</p>
+<form id="survey-form">
+  <label id="name-label">Name</label>
+<input id="name" name="name" type="text" placeholder="Enter your name" required><br><br>
+<label id="email-label">Email</label>
+<input id="email" name="email" type="email" placeholder="Enter your email" required><br><br>
+<label id="number-label">Age (optional)</label>
+<input id="number" name="age" type="number" min="18" max="50" placeholder="Age"><br><br>
+<div>
+<label for="dropdown">How do you feel everytime you are at work?</label>
+<select id="dropdown" name="feeling" class="form-control" required>
+  <option name="feeling">Excited</option>
+<option name="feeling">Scared</option>
+<option name="feeling">Indifferent</option>
+<option name="feeling">Pissed</option>
+</select><br><br>
+</div>
+<div class="form-group">
+<p>Does your daily work routine reflect your <strong>JD</strong> and contributes to your <strong>KPI?</strong></p>
+<label>
+  <input name="work-routine" value="definitely" type="radio" class="input-radio">Sometimes</input>
+  </label>
+  <label>
+  <input name="work-routine" value="definitely" type="radio" class="input-radio">Not at all</input>
+  </label>
+  <label>
+  <input name="work-routine" value="definitely" type="radio" class="input-radio">Sometimes</input>
+  </label><br><br>
+  </div>
+<div>
+<label for="dropdown">Do you enjoy working with your team-mates?</label>
+<select id="dropdown" name="feeling" class="form-control" required>
+  <option name="feeling">Sometimes</option>
+<option name="feeling">I barely notice them</option>
+<option name="feeling">Yes. They are the best</option>
+<option name="feeling">I prefer working alone</option>
+</select>
+</div>
+  <div class="form-group">
+<p>Would you recommend your friend to join the company?</strong></p>
+<label>
+  <input name="work-routine" value="definitely" type="checkbox" class="input-checkbox">Yeah, Sure!</input>
+  </label>
+  <label>
+  <input name="work-routine" value="definitely" type="checkbox" class="input-checkbox">Definitely Not</input>
+  </label>
+  <label><br><br>
+  <input name="work-routine" value="definitely" type="checkbox" class="input-checkbox">Well, if they don't mind.</input>
+  </label>
+  <label>
+  <input name="work-routine" value="definitely" type="checkbox" class="input-checkbox">God forbid.</input>
+  </label>
+  <br><br>
+  </div>
+  <div class"formgroup">
+  <p>What ways do you think management can improve on work culture to increase your productivity at work?</p>
+ <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Share as many suggestions as you can"
+      ></textarea><br><br>
+    </div>
+  <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+</form>
+</html>
+
